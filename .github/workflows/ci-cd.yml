@@ -25,7 +25,7 @@ jobs:
       with:
         arguments: build
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact@v3
       with: 
         name: coupon-engine-app
         path: build/libs/coupon_engine-1.2.0.jar
@@ -37,6 +37,7 @@ jobs:
     
     steps:
       - name: Download Artifact
+        uses: actions/download-artifact@v3
         with:
           name: coupon-engine-app
       - name: Deploy to AWS EB
