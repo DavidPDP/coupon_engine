@@ -49,12 +49,12 @@ public class CouponEngineAPI {
 	@PostMapping("/coupon")
 	public Mono<RecommendedItems> recommendItemsByApplyingCoupon(@RequestBody CouponRequest request) {
 		var response = couponProcessor.calculateItemsToRecommend(request.getItemsId(), request.getCouponAmount());
-		response.flatMap(r -> { 
+		response.subscribe(r -> { 
 			System.out.format("%s,%s,%s,%s,%s", 
 					request.getItemsId().size(), request.getCouponAmount(),
 					r.getItemsId().size(), r.getTotal(), Instant.now().toString()
 			); 
-			return null; // Only for DDR.
+			// Only for DDR.
 		});
 		return response;
 	}
