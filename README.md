@@ -11,6 +11,7 @@ El flujo para la gestión de la configuración se realizará basado en GitHub Fl
 
 # Análisis
 Utilizando la filosofía DDD y complementandola con la metodología de Merlín Dorfman, se procede a modular el sistema como se puede observar a continuación.
+
 ![Dorfman with DDD](https://drive.google.com/uc?export=download&id=1d3YPAbT1NCxLCQuo6m0iQZT0RSt8SfsV)
 
  - API: Contiene los flujos del sistema que expone el sistema solución.
@@ -30,6 +31,8 @@ Se identificaron los siguientes Requerimientos Arquitectónicamente Significativ
 
 Dado estos RAS se procede a proponer el diseño arquitectónico de la solución.
 
+![Deployment](https://github.com/DavidPDP/coupon_engine/blob/main/docs/imgs/coupon-deployment%20.jpg)
+
 Como se puede observar se procede a definir que la aplicación estará desplegada sobre un AWS Elastic Beanstalk directamente como instancia. Esto permite aprovechar las ventajas de auto-gestión del proveedor de nube. Se puede ver que no se hizo uso de virtualización (específicamente de Docker), esto se debe al tamaño de la aplicación. Por lo que en el nodo de procesamiento no hará falta aislar dependencias y precisamente procesos. Por lo que implementar Docker sería nada más un plus innecesario.
 
 # Implementación
@@ -39,8 +42,14 @@ Como herramientas se procedió a utilizar Java como lenguaje de programación, t
 
 Se utilizó reactividad para redireccionar el problema del performance, creando el flujo del sistema no bloqueante. Por último, se puede observar cada una de las iteracciones realizadas en la diferentes versiones lanzadas, en las que se puede ver como de manera oportuna se pudo ir iterando sobre el código de la mano con las pruebas. Lo que permite la consistencia y la habilitación de la automatización en el flujo de entrega (Continous Delivery).
 
+> Nota: En la implementación del API, se decidió no seguir la guía respecto a la respuesta 404 cuando no hay items a recomendar. Esto se debe particularmente a la separación de las preocupaciones. HTTP es un protocolo de comunicación y es independiente de la capa de negocio. Un 404 significa un error de comunicación más no un error en el modelo de negocio. Por lo tanto la respuesta cuando no encuentra items es lista vacía y float = 0.00F. 
+
 ## Resultados Pruebas
 A continuación, se puede observar el resultados de las pruebas:
+
+![Tests Class](https://github.com/DavidPDP/coupon_engine/blob/main/docs/imgs/tests-class.PNG)
+
+![Test Coverage](https://github.com/DavidPDP/coupon_engine/blob/main/docs/imgs/test-coverage.PNG)
 
 # Despliegue
 ## Stand-Alone
