@@ -3,9 +3,7 @@ package com.mercadolibre.repositories;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 
-import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -59,7 +57,7 @@ public class MeliItemRepo {
 	 */
 	public Mono<Map<String, Float>> fecthMeliItems(List<String> itemIds) {
 		
-		List<Mono<List<MeliItemWrapper>>> resultPubs = new ArrayList<>();
+		List<Flux<MeliItemWrapper>> resultPubs = new ArrayList<>();
 		
 		// Iteration per chunk. Chunk = pagingLimit.
 		for(int i=0, j=pagingLimit; i < itemIds.size(); i+=pagingLimit, j+=pagingLimit) {
@@ -71,16 +69,15 @@ public class MeliItemRepo {
 			var fetchedItems = meliItemAdapter.get()
 					.uri(uri -> uri.queryParam("ids", String.join(",", itemIdsChunk)).build())
 					.retrieve()
-					.bodyToMono(new ParameterizedTypeReference<List<MeliItemWrapper>>() {});
+					.bodyToFlux(MeliItemWrapper.class);
 			
 			// Merge responses.
 			resultPubs.add(fetchedItems);
 			
 		}
 		
-		// Stream = merge all responses + flat into one stream + filter null prices + collect in map
+		// Stream = merge all responses + filter null prices + collect in map
 		return Flux.merge(resultPubs)
-				.flatMapIterable(Function.identity())
 				.filter(item -> item.getBody().getPrice() != null)
 				.collectMap(item -> item.getBody().getId(), item -> item.getBody().getPrice());
 		
