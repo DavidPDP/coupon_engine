@@ -1,0 +1,1376 @@
+[
+    {
+      "code": 200,
+      "body": {
+        "id": "MCO808833794",
+        "site_id": "MCO",
+        "title": "Sillas Eames Silla Minimalista Moderna Paquete De 4",
+        "subtitle": null,
+        "seller_id": 241976445,
+        "category_id": "MCO177106",
+        "official_store_id": 1789,
+        "price": 348900,
+        "base_price": 348900,
+        "original_price": 576900,
+        "currency_id": "COP",
+        "initial_quantity": 687,
+        "available_quantity": 4,
+        "sold_quantity": 505,
+        "sale_terms": [
+        ],
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "start_time": "2021-09-16T01:06:07.000Z",
+        "stop_time": "2041-09-10T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://articulo.mercadolibre.com.co/MCO-808833794-sillas-eames-silla-minimalista-moderna-paquete-de-4-_JM",
+        "thumbnail_id": "735059-MCO48199516149_112021",
+        "thumbnail": "http://http2.mlstatic.com/D_735059-MCO48199516149_112021-I.jpg",
+        "secure_thumbnail": "https://http2.mlstatic.com/D_735059-MCO48199516149_112021-I.jpg",
+        "pictures": [
+          {
+            "id": "735059-MCO48199516149_112021",
+            "url": "http://http2.mlstatic.com/D_735059-MCO48199516149_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_735059-MCO48199516149_112021-O.jpg",
+            "size": "440x500",
+            "max_size": "442x502",
+            "quality": ""
+          },
+          {
+            "id": "883904-MCO48199516141_112021",
+            "url": "http://http2.mlstatic.com/D_883904-MCO48199516141_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_883904-MCO48199516141_112021-O.jpg",
+            "size": "304x500",
+            "max_size": "720x1182",
+            "quality": ""
+          },
+          {
+            "id": "861269-MCO48199516143_112021",
+            "url": "http://http2.mlstatic.com/D_861269-MCO48199516143_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_861269-MCO48199516143_112021-O.jpg",
+            "size": "337x500",
+            "max_size": "344x510",
+            "quality": ""
+          },
+          {
+            "id": "716227-MCO48199516144_112021",
+            "url": "http://http2.mlstatic.com/D_716227-MCO48199516144_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_716227-MCO48199516144_112021-O.jpg",
+            "size": "275x500",
+            "max_size": "277x503",
+            "quality": ""
+          },
+          {
+            "id": "659179-MCO48199516142_112021",
+            "url": "http://http2.mlstatic.com/D_659179-MCO48199516142_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_659179-MCO48199516142_112021-O.jpg",
+            "size": "311x500",
+            "max_size": "317x509",
+            "quality": ""
+          },
+          {
+            "id": "698396-MCO48199516139_112021",
+            "url": "http://http2.mlstatic.com/D_698396-MCO48199516139_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_698396-MCO48199516139_112021-O.jpg",
+            "size": "457x500",
+            "max_size": "466x509",
+            "quality": ""
+          },
+          {
+            "id": "916093-MCO48199516135_112021",
+            "url": "http://http2.mlstatic.com/D_916093-MCO48199516135_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_916093-MCO48199516135_112021-O.jpg",
+            "size": "390x500",
+            "max_size": "392x502",
+            "quality": ""
+          },
+          {
+            "id": "815596-MCO48199516148_112021",
+            "url": "http://http2.mlstatic.com/D_815596-MCO48199516148_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_815596-MCO48199516148_112021-O.jpg",
+            "size": "281x500",
+            "max_size": "461x819",
+            "quality": ""
+          },
+          {
+            "id": "636750-MCO48199516136_112021",
+            "url": "http://http2.mlstatic.com/D_636750-MCO48199516136_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_636750-MCO48199516136_112021-O.jpg",
+            "size": "500x343",
+            "max_size": "1048x720",
+            "quality": ""
+          },
+          {
+            "id": "903589-MCO48199516145_112021",
+            "url": "http://http2.mlstatic.com/D_903589-MCO48199516145_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_903589-MCO48199516145_112021-O.jpg",
+            "size": "500x378",
+            "max_size": "1024x776",
+            "quality": ""
+          },
+          {
+            "id": "703353-MCO48199516137_112021",
+            "url": "http://http2.mlstatic.com/D_703353-MCO48199516137_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_703353-MCO48199516137_112021-O.jpg",
+            "size": "309x500",
+            "max_size": "316x510",
+            "quality": ""
+          },
+          {
+            "id": "612218-MCO48199516138_112021",
+            "url": "http://http2.mlstatic.com/D_612218-MCO48199516138_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_612218-MCO48199516138_112021-O.jpg",
+            "size": "326x500",
+            "max_size": "328x503",
+            "quality": ""
+          },
+          {
+            "id": "807670-MCO48199516146_112021",
+            "url": "http://http2.mlstatic.com/D_807670-MCO48199516146_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_807670-MCO48199516146_112021-O.jpg",
+            "size": "368x500",
+            "max_size": "388x527",
+            "quality": ""
+          },
+          {
+            "id": "822962-MCO48199516140_112021",
+            "url": "http://http2.mlstatic.com/D_822962-MCO48199516140_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_822962-MCO48199516140_112021-O.jpg",
+            "size": "324x500",
+            "max_size": "464x716",
+            "quality": ""
+          },
+          {
+            "id": "792057-MCO48199516147_112021",
+            "url": "http://http2.mlstatic.com/D_792057-MCO48199516147_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_792057-MCO48199516147_112021-O.jpg",
+            "size": "295x500",
+            "max_size": "422x713",
+            "quality": ""
+          },
+          {
+            "id": "875654-MCO49025433137_022022",
+            "url": "http://http2.mlstatic.com/D_875654-MCO49025433137_022022-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_875654-MCO49025433137_022022-O.jpg",
+            "size": "258x500",
+            "max_size": "260x503",
+            "quality": ""
+          },
+          {
+            "id": "946457-MCO49025433135_022022",
+            "url": "http://http2.mlstatic.com/D_946457-MCO49025433135_022022-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_946457-MCO49025433135_022022-O.jpg",
+            "size": "336x500",
+            "max_size": "338x502",
+            "quality": ""
+          },
+          {
+            "id": "971470-MCO49025433139_022022",
+            "url": "http://http2.mlstatic.com/D_971470-MCO49025433139_022022-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_971470-MCO49025433139_022022-O.jpg",
+            "size": "481x500",
+            "max_size": "487x506",
+            "quality": ""
+          },
+          {
+            "id": "862224-MCO49025433138_022022",
+            "url": "http://http2.mlstatic.com/D_862224-MCO49025433138_022022-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_862224-MCO49025433138_022022-O.jpg",
+            "size": "500x481",
+            "max_size": "502x483",
+            "quality": ""
+          },
+          {
+            "id": "882473-MCO49025433136_022022",
+            "url": "http://http2.mlstatic.com/D_882473-MCO49025433136_022022-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_882473-MCO49025433136_022022-O.jpg",
+            "size": "421x500",
+            "max_size": "1185x1407",
+            "quality": ""
+          }
+        ],
+        "video_id": "YT3-QmNWFj0",
+        "descriptions": [
+        ],
+        "accepts_mercadopago": true,
+        "non_mercado_pago_payment_methods": [
+        ],
+        "shipping": {
+          "mode": "me2",
+          "free_methods": [
+            {
+              "id": 501745,
+              "rule": {
+                "default": true,
+                "free_mode": "country",
+                "free_shipping_flag": true,
+                "value": null
+              }
+            }
+          ],
+          "tags": [
+            "self_service_in",
+            "mandatory_free_shipping"
+          ],
+          "dimensions": null,
+          "local_pick_up": false,
+          "free_shipping": true,
+          "logistic_type": "fulfillment",
+          "store_pick_up": false
+        },
+        "international_delivery_mode": "none",
+        "seller_address": {
+          "city": {
+            "id": "TUNPQ0ZVTjMxMDQy",
+            "name": "Funza"
+          },
+          "state": {
+            "id": "CO-CUN",
+            "name": "Cundinamarca"
+          },
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "search_location": {
+            "city": {
+              "id": "TUNPQ0ZVTjMxMDQy",
+              "name": "Funza"
+            },
+            "state": {
+              "id": "TUNPUENVTmE3NmQ4",
+              "name": "Cundinamarca"
+            }
+          },
+          "id": 1219516970
+        },
+        "seller_contact": null,
+        "location": {
+        },
+        "coverage_areas": [
+        ],
+        "attributes": [
+          {
+            "id": "BRAND",
+            "name": "Marca",
+            "value_id": "11976772",
+            "value_name": "Urban Design",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "11976772",
+                "name": "Urban Design",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "CHAIRS_NUMBER_BY_SET",
+            "name": "Cantidad de sillas por set",
+            "value_id": null,
+            "value_name": "4",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "4",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "CHAIR_DESIGN",
+            "name": "Diseño de la silla",
+            "value_id": "2171487",
+            "value_name": "Eames",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "2171487",
+                "name": "Eames",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "EXCLUSIVE_CHANNEL",
+            "name": "Canal exclusivo",
+            "value_id": "7865259",
+            "value_name": "Mercado Libre",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "7865259",
+                "name": "Mercado Libre",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "INCLUDES_UPHOLSTERY",
+            "name": "Incluye tapizado",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "242084",
+                "name": "No",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "ITEM_CONDITION",
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_name": "Nuevo",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "MANUFACTURER",
+            "name": "Fabricante",
+            "value_id": "11976772",
+            "value_name": "Urban Design",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "11976772",
+                "name": "Urban Design",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "MAX_WEIGHT_SUPPORTED",
+            "name": "Peso máximo soportado",
+            "value_id": "1061386",
+            "value_name": "120 kg",
+            "value_struct": {
+              "number": 120,
+              "unit": "kg"
+            },
+            "values": [
+              {
+                "id": "1061386",
+                "name": "120 kg",
+                "struct": {
+                  "number": 120,
+                  "unit": "kg"
+                }
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "MODEL",
+            "name": "Modelo",
+            "value_id": "6099857",
+            "value_name": "DC-04",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "6099857",
+                "name": "DC-04",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "PRODUCT_FEATURES",
+            "name": "Características del producto",
+            "value_id": "8847339",
+            "value_name": "Sin vencimiento",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "8847339",
+                "name": "Sin vencimiento",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "REQUIRES_ASSEMBLY",
+            "name": "Requiere ensamblado",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "242085",
+                "name": "Sí",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "SHIPMENT_PACKING",
+            "name": "Embalaje del envío",
+            "value_id": "7575939",
+            "value_name": "Auto-despachable",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "7575939",
+                "name": "Auto-despachable",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "STRUCTURE_MATERIALS",
+            "name": "Materiales de la estructura",
+            "value_id": "5929292",
+            "value_name": "Madera/Metal/Plástico",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "5929292",
+                "name": "Madera/Metal/Plástico",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "UPHOLSTERY_MATERIAL",
+            "name": "Material del tapizado",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "WEIGHT",
+            "name": "Peso",
+            "value_id": null,
+            "value_name": "15 kg",
+            "value_struct": {
+              "number": 15,
+              "unit": "kg"
+            },
+            "values": [
+              {
+                "id": null,
+                "name": "15 kg",
+                "struct": {
+                  "number": 15,
+                  "unit": "kg"
+                }
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "WITH_CUSHIONED_SEAT",
+            "name": "Con asiento acolchado",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "242084",
+                "name": "No",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          }
+        ],
+        "warnings": [
+        ],
+        "listing_source": "",
+        "variations": [
+          {
+            "id": 173754785224,
+            "price": 348900,
+            "attribute_combinations": [
+              {
+                "id": null,
+                "name": "Color",
+                "value_id": null,
+                "value_name": "Blanco",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": null,
+                    "name": "Blanco",
+                    "struct": null
+                  }
+                ]
+              },
+              {
+                "id": "CHAIR_STRUCTURE_COLOR",
+                "name": "Color de la estructura",
+                "value_id": "52055",
+                "value_name": "Blanco",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": "52055",
+                    "name": "Blanco",
+                    "struct": null
+                  }
+                ]
+              }
+            ],
+            "available_quantity": 1,
+            "sold_quantity": 250,
+            "sale_terms": [
+            ],
+            "picture_ids": [
+              "735059-MCO48199516149_112021",
+              "883904-MCO48199516141_112021",
+              "861269-MCO48199516143_112021",
+              "716227-MCO48199516144_112021",
+              "659179-MCO48199516142_112021",
+              "698396-MCO48199516139_112021"
+            ],
+            "catalog_product_id": null
+          },
+          {
+            "id": 173754785225,
+            "price": 348900,
+            "attribute_combinations": [
+              {
+                "id": null,
+                "name": "Color",
+                "value_id": null,
+                "value_name": "Negro",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": null,
+                    "name": "Negro",
+                    "struct": null
+                  }
+                ]
+              },
+              {
+                "id": "CHAIR_STRUCTURE_COLOR",
+                "name": "Color de la estructura",
+                "value_id": "52049",
+                "value_name": "Negro",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": "52049",
+                    "name": "Negro",
+                    "struct": null
+                  }
+                ]
+              }
+            ],
+            "available_quantity": 1,
+            "sold_quantity": 150,
+            "sale_terms": [
+            ],
+            "picture_ids": [
+              "916093-MCO48199516135_112021",
+              "815596-MCO48199516148_112021",
+              "636750-MCO48199516136_112021",
+              "903589-MCO48199516145_112021"
+            ],
+            "catalog_product_id": null
+          },
+          {
+            "id": 173754785226,
+            "price": 348900,
+            "attribute_combinations": [
+              {
+                "id": null,
+                "name": "Color",
+                "value_id": null,
+                "value_name": "Gris",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": null,
+                    "name": "Gris",
+                    "struct": null
+                  }
+                ]
+              },
+              {
+                "id": "CHAIR_STRUCTURE_COLOR",
+                "name": "Color de la estructura",
+                "value_id": "283165",
+                "value_name": "Gris",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": "283165",
+                    "name": "Gris",
+                    "struct": null
+                  }
+                ]
+              }
+            ],
+            "available_quantity": 1,
+            "sold_quantity": 100,
+            "sale_terms": [
+            ],
+            "picture_ids": [
+              "882473-MCO49025433136_022022"
+            ],
+            "catalog_product_id": "MCO19041110"
+          },
+          {
+            "id": 173754785227,
+            "price": 348900,
+            "attribute_combinations": [
+              {
+                "id": null,
+                "name": "Color",
+                "value_id": null,
+                "value_name": "Rojo",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": null,
+                    "name": "Rojo",
+                    "struct": null
+                  }
+                ]
+              },
+              {
+                "id": "CHAIR_STRUCTURE_COLOR",
+                "name": "Color de la estructura",
+                "value_id": "51993",
+                "value_name": "Rojo",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": "51993",
+                    "name": "Rojo",
+                    "struct": null
+                  }
+                ]
+              }
+            ],
+            "available_quantity": 1,
+            "sold_quantity": 5,
+            "sale_terms": [
+            ],
+            "picture_ids": [
+              "807670-MCO48199516146_112021",
+              "822962-MCO48199516140_112021",
+              "792057-MCO48199516147_112021"
+            ],
+            "catalog_product_id": null
+          }
+        ],
+        "status": "active",
+        "sub_status": [
+        ],
+        "tags": [
+          "loyalty_discount_eligible",
+          "deal_of_the_day",
+          "dragged_bids_and_visits",
+          "good_quality_picture",
+          "good_quality_thumbnail",
+          "immediate_payment",
+          "cart_eligible"
+        ],
+        "warranty": null,
+        "catalog_product_id": "MCO19040922",
+        "domain_id": "MCO-DINING_CHAIRS",
+        "parent_item_id": "MCO617874223",
+        "differential_pricing": null,
+        "deal_ids": [
+          "MCO4871",
+          "MCO4829",
+          "MCO4836",
+          "MCO4623",
+          "MCO2298",
+          "MCO3269",
+          "MCO4356"
+        ],
+        "automatic_relist": false,
+        "date_created": "2021-09-16T01:06:07.000Z",
+        "last_updated": "2022-04-26T22:05:20.000Z",
+        "health": 0.87,
+        "catalog_listing": false,
+        "channels": [
+          "marketplace"
+        ]
+      }
+    },
+    {
+      "code": 200,
+      "body": {
+        "id": "MCO613846300",
+        "site_id": "MCO",
+        "title": "Banda Elastica Resistencia Fortalecimiento Mano Dedos",
+        "subtitle": null,
+        "seller_id": 78014383,
+        "category_id": "MCO179924",
+        "official_store_id": null,
+        "price": 9238,
+        "base_price": 9238,
+        "original_price": 14900,
+        "currency_id": "COP",
+        "initial_quantity": 936,
+        "available_quantity": 3,
+        "sold_quantity": 750,
+        "sale_terms": [
+          {
+            "id": "WARRANTY_TIME",
+            "name": "Tiempo de garantía",
+            "value_id": null,
+            "value_name": "30 días",
+            "value_struct": {
+              "number": 30,
+              "unit": "días"
+            },
+            "values": [
+              {
+                "id": null,
+                "name": "30 días",
+                "struct": {
+                  "number": 30,
+                  "unit": "días"
+                }
+              }
+            ]
+          },
+          {
+            "id": "WARRANTY_TYPE",
+            "name": "Tipo de garantía",
+            "value_id": "2230279",
+            "value_name": "Garantía de fábrica",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "2230279",
+                "name": "Garantía de fábrica",
+                "struct": null
+              }
+            ]
+          }
+        ],
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "start_time": "2021-03-28T16:52:20.000Z",
+        "stop_time": "2041-06-01T15:55:19.000Z",
+        "condition": "new",
+        "permalink": "https://articulo.mercadolibre.com.co/MCO-613846300-banda-elastica-resistencia-fortalecimiento-mano-dedos-_JM",
+        "thumbnail_id": "950964-MCO48271287309_112021",
+        "thumbnail": "http://http2.mlstatic.com/D_950964-MCO48271287309_112021-I.jpg",
+        "secure_thumbnail": "https://http2.mlstatic.com/D_950964-MCO48271287309_112021-I.jpg",
+        "pictures": [
+          {
+            "id": "950964-MCO48271287309_112021",
+            "url": "http://http2.mlstatic.com/D_950964-MCO48271287309_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_950964-MCO48271287309_112021-O.jpg",
+            "size": "500x316",
+            "max_size": "1180x748",
+            "quality": ""
+          },
+          {
+            "id": "920479-MCO48271294543_112021",
+            "url": "http://http2.mlstatic.com/D_920479-MCO48271294543_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_920479-MCO48271294543_112021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "808924-MCO47163665494_082021",
+            "url": "http://http2.mlstatic.com/D_808924-MCO47163665494_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_808924-MCO47163665494_082021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "966599-MCO48271291565_112021",
+            "url": "http://http2.mlstatic.com/D_966599-MCO48271291565_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_966599-MCO48271291565_112021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "707367-MCO47163829347_082021",
+            "url": "http://http2.mlstatic.com/D_707367-MCO47163829347_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_707367-MCO47163829347_082021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "793893-MCO47163594777_082021",
+            "url": "http://http2.mlstatic.com/D_793893-MCO47163594777_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_793893-MCO47163594777_082021-O.jpg",
+            "size": "500x454",
+            "max_size": "1318x1199",
+            "quality": ""
+          },
+          {
+            "id": "773692-MCO47163606702_082021",
+            "url": "http://http2.mlstatic.com/D_773692-MCO47163606702_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_773692-MCO47163606702_082021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "677477-MCO47163605676_082021",
+            "url": "http://http2.mlstatic.com/D_677477-MCO47163605676_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_677477-MCO47163605676_082021-O.jpg",
+            "size": "500x495",
+            "max_size": "1312x1301",
+            "quality": ""
+          },
+          {
+            "id": "701060-MCO47669541907_092021",
+            "url": "http://http2.mlstatic.com/D_701060-MCO47669541907_092021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_701060-MCO47669541907_092021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "696463-MCO47669612363_092021",
+            "url": "http://http2.mlstatic.com/D_696463-MCO47669612363_092021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_696463-MCO47669612363_092021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "633887-MCO48271265466_112021",
+            "url": "http://http2.mlstatic.com/D_633887-MCO48271265466_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_633887-MCO48271265466_112021-O.jpg",
+            "size": "500x294",
+            "max_size": "1196x704",
+            "quality": ""
+          },
+          {
+            "id": "873134-MCO48271273738_112021",
+            "url": "http://http2.mlstatic.com/D_873134-MCO48271273738_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_873134-MCO48271273738_112021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "759317-MCO47163705638_082021",
+            "url": "http://http2.mlstatic.com/D_759317-MCO47163705638_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_759317-MCO47163705638_082021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "749842-MCO48271262698_112021",
+            "url": "http://http2.mlstatic.com/D_749842-MCO48271262698_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_749842-MCO48271262698_112021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "657658-MCO47163841243_082021",
+            "url": "http://http2.mlstatic.com/D_657658-MCO47163841243_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_657658-MCO47163841243_082021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "756346-MCO47163882099_082021",
+            "url": "http://http2.mlstatic.com/D_756346-MCO47163882099_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_756346-MCO47163882099_082021-O.jpg",
+            "size": "500x454",
+            "max_size": "1318x1199",
+            "quality": ""
+          },
+          {
+            "id": "738791-MCO47163888092_082021",
+            "url": "http://http2.mlstatic.com/D_738791-MCO47163888092_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_738791-MCO47163888092_082021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "995656-MCO47163731551_082021",
+            "url": "http://http2.mlstatic.com/D_995656-MCO47163731551_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_995656-MCO47163731551_082021-O.jpg",
+            "size": "500x495",
+            "max_size": "1312x1301",
+            "quality": ""
+          },
+          {
+            "id": "885267-MCO47669625286_092021",
+            "url": "http://http2.mlstatic.com/D_885267-MCO47669625286_092021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_885267-MCO47669625286_092021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "710944-MCO47669558799_092021",
+            "url": "http://http2.mlstatic.com/D_710944-MCO47669558799_092021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_710944-MCO47669558799_092021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "706169-MCO48271247559_112021",
+            "url": "http://http2.mlstatic.com/D_706169-MCO48271247559_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_706169-MCO48271247559_112021-O.jpg",
+            "size": "500x325",
+            "max_size": "1162x756",
+            "quality": ""
+          },
+          {
+            "id": "823781-MCO48271261724_112021",
+            "url": "http://http2.mlstatic.com/D_823781-MCO48271261724_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_823781-MCO48271261724_112021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "959711-MCO47163654737_082021",
+            "url": "http://http2.mlstatic.com/D_959711-MCO47163654737_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_959711-MCO47163654737_082021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "873620-MCO48271247838_112021",
+            "url": "http://http2.mlstatic.com/D_873620-MCO48271247838_112021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_873620-MCO48271247838_112021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "768953-MCO47163672716_082021",
+            "url": "http://http2.mlstatic.com/D_768953-MCO47163672716_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_768953-MCO47163672716_082021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "764335-MCO47163838125_082021",
+            "url": "http://http2.mlstatic.com/D_764335-MCO47163838125_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_764335-MCO47163838125_082021-O.jpg",
+            "size": "500x454",
+            "max_size": "1318x1199",
+            "quality": ""
+          },
+          {
+            "id": "746021-MCO47163724502_082021",
+            "url": "http://http2.mlstatic.com/D_746021-MCO47163724502_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_746021-MCO47163724502_082021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "728502-MCO47163599946_082021",
+            "url": "http://http2.mlstatic.com/D_728502-MCO47163599946_082021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_728502-MCO47163599946_082021-O.jpg",
+            "size": "500x495",
+            "max_size": "1312x1301",
+            "quality": ""
+          },
+          {
+            "id": "705584-MCO47669630280_092021",
+            "url": "http://http2.mlstatic.com/D_705584-MCO47669630280_092021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_705584-MCO47669630280_092021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          },
+          {
+            "id": "718552-MCO47669660072_092021",
+            "url": "http://http2.mlstatic.com/D_718552-MCO47669660072_092021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_718552-MCO47669660072_092021-O.jpg",
+            "size": "500x500",
+            "max_size": "1200x1200",
+            "quality": ""
+          }
+        ],
+        "video_id": null,
+        "descriptions": [
+        ],
+        "accepts_mercadopago": true,
+        "non_mercado_pago_payment_methods": [
+        ],
+        "shipping": {
+          "mode": "me2",
+          "methods": [
+          ],
+          "tags": [
+          ],
+          "dimensions": null,
+          "local_pick_up": false,
+          "free_shipping": false,
+          "logistic_type": "fulfillment",
+          "store_pick_up": false
+        },
+        "international_delivery_mode": "none",
+        "seller_address": {
+          "city": {
+            "id": "TUNPQ01FRGRjNjc4",
+            "name": "Medellín"
+          },
+          "state": {
+            "id": "CO-ANT",
+            "name": "Antioquia"
+          },
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "search_location": {
+            "city": {
+              "id": "TUNPQ0VOVjU5YjYx",
+              "name": "Envigado"
+            },
+            "state": {
+              "id": "TUNPUEFOVGFiZWI3",
+              "name": "Antioquia"
+            }
+          },
+          "id": 1196854171
+        },
+        "seller_contact": null,
+        "location": {
+        },
+        "coverage_areas": [
+        ],
+        "attributes": [
+          {
+            "id": "BRAND",
+            "name": "Marca",
+            "value_id": null,
+            "value_name": "Pbold ®",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "Pbold ®",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "ITEM_CONDITION",
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_name": "Nuevo",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "LENGTH",
+            "name": "Largo",
+            "value_id": null,
+            "value_name": "8 cm",
+            "value_struct": {
+              "number": 8,
+              "unit": "cm"
+            },
+            "values": [
+              {
+                "id": null,
+                "name": "8 cm",
+                "struct": {
+                  "number": 8,
+                  "unit": "cm"
+                }
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "MODEL",
+            "name": "Modelo",
+            "value_id": null,
+            "value_name": "Ejercitador Dedos Mano",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "Ejercitador Dedos Mano",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "PRODUCT_FEATURES",
+            "name": "Características del producto",
+            "value_id": "8847339",
+            "value_name": "Sin vencimiento",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "8847339",
+                "name": "Sin vencimiento",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "RESISTANCE_BAND_WITH_HANDLES",
+            "name": "Con manijas",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "242084",
+                "name": "No",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "SALE_FORMAT",
+            "name": "Formato de venta",
+            "value_id": "1359391",
+            "value_name": "Unidad",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "1359391",
+                "name": "Unidad",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "SHIPMENT_PACKING",
+            "name": "Embalaje del envío",
+            "value_id": "7435891",
+            "value_name": "Bolsa",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "7435891",
+                "name": "Bolsa",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          }
+        ],
+        "warnings": [
+        ],
+        "listing_source": "",
+        "variations": [
+          {
+            "id": 85171621437,
+            "price": 9238,
+            "attribute_combinations": [
+              {
+                "id": null,
+                "name": "Nivel",
+                "value_id": null,
+                "value_name": "3KG",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": null,
+                    "name": "3KG",
+                    "struct": null
+                  }
+                ]
+              }
+            ],
+            "available_quantity": 1,
+            "sold_quantity": 250,
+            "sale_terms": [
+            ],
+            "picture_ids": [
+              "950964-MCO48271287309_112021",
+              "920479-MCO48271294543_112021",
+              "808924-MCO47163665494_082021",
+              "966599-MCO48271291565_112021",
+              "707367-MCO47163829347_082021",
+              "793893-MCO47163594777_082021",
+              "773692-MCO47163606702_082021",
+              "677477-MCO47163605676_082021",
+              "701060-MCO47669541907_092021",
+              "696463-MCO47669612363_092021"
+            ],
+            "catalog_product_id": null
+          },
+          {
+            "id": 85171621416,
+            "price": 9238,
+            "attribute_combinations": [
+              {
+                "id": null,
+                "name": "Nivel",
+                "value_id": null,
+                "value_name": "5KG",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": null,
+                    "name": "5KG",
+                    "struct": null
+                  }
+                ]
+              }
+            ],
+            "available_quantity": 1,
+            "sold_quantity": 250,
+            "sale_terms": [
+            ],
+            "picture_ids": [
+              "706169-MCO48271247559_112021",
+              "823781-MCO48271261724_112021",
+              "959711-MCO47163654737_082021",
+              "873620-MCO48271247838_112021",
+              "768953-MCO47163672716_082021",
+              "764335-MCO47163838125_082021",
+              "746021-MCO47163724502_082021",
+              "728502-MCO47163599946_082021",
+              "705584-MCO47669630280_092021",
+              "718552-MCO47669660072_092021"
+            ],
+            "catalog_product_id": null
+          },
+          {
+            "id": 85171621430,
+            "price": 9238,
+            "attribute_combinations": [
+              {
+                "id": null,
+                "name": "Nivel",
+                "value_id": null,
+                "value_name": "4KG",
+                "value_struct": null,
+                "values": [
+                  {
+                    "id": null,
+                    "name": "4KG",
+                    "struct": null
+                  }
+                ]
+              }
+            ],
+            "available_quantity": 1,
+            "sold_quantity": 250,
+            "sale_terms": [
+            ],
+            "picture_ids": [
+              "633887-MCO48271265466_112021",
+              "873134-MCO48271273738_112021",
+              "759317-MCO47163705638_082021",
+              "749842-MCO48271262698_112021",
+              "657658-MCO47163841243_082021",
+              "756346-MCO47163882099_082021",
+              "738791-MCO47163888092_082021",
+              "995656-MCO47163731551_082021",
+              "885267-MCO47669625286_092021",
+              "710944-MCO47669558799_092021"
+            ],
+            "catalog_product_id": null
+          }
+        ],
+        "status": "active",
+        "sub_status": [
+        ],
+        "tags": [
+          "deal_of_the_day",
+          "good_quality_picture",
+          "good_quality_thumbnail",
+          "standard_price_by_channel",
+          "immediate_payment",
+          "cart_eligible"
+        ],
+        "warranty": "Garantía de fábrica: 30 días",
+        "catalog_product_id": null,
+        "domain_id": "MCO-RESISTANCE_BANDS",
+        "parent_item_id": null,
+        "differential_pricing": null,
+        "deal_ids": [
+          "MCO3269"
+        ],
+        "automatic_relist": false,
+        "date_created": "2021-03-28T16:52:20.000Z",
+        "last_updated": "2022-04-26T21:18:34.000Z",
+        "health": 0.85,
+        "catalog_listing": false,
+        "channels": [
+          "marketplace",
+          "mshops"
+        ]
+      }
+    }
+  ]
