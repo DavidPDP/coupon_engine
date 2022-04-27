@@ -2,10 +2,11 @@ plugins {
 	id 'org.springframework.boot' version '2.6.7'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id 'jacoco'
 }
 
 group = 'com.mercadolibre'
-version = '1.0.0'
+version = '1.2.0'
 sourceCompatibility = '11'
 
 configurations {
@@ -31,4 +32,33 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+	finalizedBy jacocoTestReport
+}
+
+tasks.named('jacocoTestReport') {
+	
+	dependsOn test
+    
+    reports {
+    	xml.required = false
+        csv.required = false
+        html.required = true
+    }
+    
+    finalizedBy jacocoTestCoverageVerification
+	
+}
+
+tasks.named('jacocoTestCoverageVerification') {
+	
+	dependsOn jacocoTestReport
+    
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.5
+            }
+        }
+	}
+	
 }
