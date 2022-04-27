@@ -1,0 +1,677 @@
+[
+    {
+      "code": 404,
+      "body": {
+        "id": "MCO808833797",
+        "message": "Item with id MCO808833797 not found",
+        "error": "not_found",
+        "status": 404,
+        "cause": [
+        ]
+      }
+    },
+    {
+      "code": 200,
+      "body": {
+        "id": "MCO808833798",
+        "site_id": "MCO",
+        "title": "Cepillo De Cerdas De Jabali Reforzadas De Magic (n.° 7723)",
+        "subtitle": null,
+        "seller_id": 152030121,
+        "category_id": "MCO169111",
+        "official_store_id": null,
+        "price": 86900,
+        "base_price": 86900,
+        "original_price": null,
+        "currency_id": "COP",
+        "initial_quantity": 10,
+        "available_quantity": 1,
+        "sold_quantity": 0,
+        "sale_terms": [
+          {
+            "id": "WARRANTY_TYPE",
+            "name": "Tipo de garantía",
+            "value_id": "2230280",
+            "value_name": "Garantía del vendedor",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "2230280",
+                "name": "Garantía del vendedor",
+                "struct": null
+              }
+            ]
+          },
+          {
+            "id": "WARRANTY_TIME",
+            "name": "Tiempo de garantía",
+            "value_id": null,
+            "value_name": "30 días",
+            "value_struct": {
+              "number": 30,
+              "unit": "días"
+            },
+            "values": [
+              {
+                "id": null,
+                "name": "30 días",
+                "struct": {
+                  "number": 30,
+                  "unit": "días"
+                }
+              }
+            ]
+          },
+          {
+            "id": "MANUFACTURING_TIME",
+            "name": "Disponibilidad de stock",
+            "value_id": null,
+            "value_name": "12 días",
+            "value_struct": {
+              "number": 12,
+              "unit": "días"
+            },
+            "values": [
+              {
+                "id": null,
+                "name": "12 días",
+                "struct": {
+                  "number": 12,
+                  "unit": "días"
+                }
+              }
+            ]
+          }
+        ],
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "start_time": "2021-09-16T01:06:42.000Z",
+        "stop_time": "2041-09-10T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://articulo.mercadolibre.com.co/MCO-808833798-cepillo-de-cerdas-de-jabali-reforzadas-de-magic-n-7723-_JM",
+        "thumbnail_id": "706004-MCO47520023773_092021",
+        "thumbnail": "http://http2.mlstatic.com/D_706004-MCO47520023773_092021-I.jpg",
+        "secure_thumbnail": "https://http2.mlstatic.com/D_706004-MCO47520023773_092021-I.jpg",
+        "pictures": [
+          {
+            "id": "706004-MCO47520023773_092021",
+            "url": "http://http2.mlstatic.com/D_706004-MCO47520023773_092021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_706004-MCO47520023773_092021-O.jpg",
+            "size": "500x497",
+            "max_size": "1601x1592",
+            "quality": ""
+          },
+          {
+            "id": "689183-MCO47520023774_092021",
+            "url": "http://http2.mlstatic.com/D_689183-MCO47520023774_092021-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_689183-MCO47520023774_092021-O.jpg",
+            "size": "500x489",
+            "max_size": "1621x1586",
+            "quality": ""
+          }
+        ],
+        "video_id": null,
+        "descriptions": [
+        ],
+        "accepts_mercadopago": true,
+        "non_mercado_pago_payment_methods": [
+        ],
+        "shipping": {
+          "mode": "me2",
+          "free_methods": [
+            {
+              "id": 501745,
+              "rule": {
+                "default": true,
+                "free_mode": "country",
+                "free_shipping_flag": true,
+                "value": null
+              }
+            }
+          ],
+          "tags": [
+            "mandatory_free_shipping"
+          ],
+          "dimensions": null,
+          "local_pick_up": false,
+          "free_shipping": true,
+          "logistic_type": "drop_off",
+          "store_pick_up": false
+        },
+        "international_delivery_mode": "none",
+        "seller_address": {
+          "city": {
+            "id": "TUNPQ0ZPTjcyNzAz",
+            "name": "Fontibón"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "search_location": {
+            "neighborhood": {
+              "id": "TVhYWm9uYSBGcmFuY2FUVU5QUTBaUFRqY3lOe",
+              "name": "Zona Franca"
+            },
+            "city": {
+              "id": "TUNPQ0ZPTjcyNzAz",
+              "name": "Fontibón"
+            },
+            "state": {
+              "id": "TUNPUEJPR1gxMDljZA",
+              "name": "Bogotá D.C."
+            }
+          },
+          "id": 1140528661
+        },
+        "seller_contact": null,
+        "location": {
+        },
+        "coverage_areas": [
+        ],
+        "attributes": [
+          {
+            "id": "LENGTH",
+            "name": "Largo",
+            "value_id": null,
+            "value_name": "15.5 cm",
+            "value_struct": {
+              "number": 15.5,
+              "unit": "cm"
+            },
+            "values": [
+              {
+                "id": null,
+                "name": "15.5 cm",
+                "struct": {
+                  "number": 15.5,
+                  "unit": "cm"
+                }
+              }
+            ],
+            "attribute_group_id": "",
+            "attribute_group_name": ""
+          },
+          {
+            "id": "LINE",
+            "name": "Línea",
+            "value_id": null,
+            "value_name": "B003SQB7WS",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "B003SQB7WS",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "",
+            "attribute_group_name": ""
+          },
+          {
+            "id": "MANUFACTURER",
+            "name": "Fabricante",
+            "value_id": null,
+            "value_name": "Magic Collection",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "Magic Collection",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "",
+            "attribute_group_name": ""
+          },
+          {
+            "id": "MATERIAL",
+            "name": "Material",
+            "value_id": null,
+            "value_name": "Boar",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "Boar",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "",
+            "attribute_group_name": ""
+          },
+          {
+            "id": "SIZE",
+            "name": "Talla",
+            "value_id": "3423405",
+            "value_name": "1",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "3423405",
+                "name": "1",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "",
+            "attribute_group_name": ""
+          },
+          {
+            "id": "WEIGHT",
+            "name": "Peso",
+            "value_id": null,
+            "value_name": "1 lb",
+            "value_struct": {
+              "number": 1,
+              "unit": "lb"
+            },
+            "values": [
+              {
+                "id": null,
+                "name": "1 lb",
+                "struct": {
+                  "number": 1,
+                  "unit": "lb"
+                }
+              }
+            ],
+            "attribute_group_id": "",
+            "attribute_group_name": ""
+          },
+          {
+            "id": "WIDTH",
+            "name": "Ancho",
+            "value_id": null,
+            "value_name": "9.7 cm",
+            "value_struct": {
+              "number": 9.7,
+              "unit": "cm"
+            },
+            "values": [
+              {
+                "id": null,
+                "name": "9.7 cm",
+                "struct": {
+                  "number": 9.7,
+                  "unit": "cm"
+                }
+              }
+            ],
+            "attribute_group_id": "",
+            "attribute_group_name": ""
+          },
+          {
+            "id": "BODY_MATERIAL",
+            "name": "Material del cuerpo",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "BRAND",
+            "name": "Marca",
+            "value_id": null,
+            "value_name": "Magic Collection",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "Magic Collection",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "BRISTLES_MATERIAL",
+            "name": "Material de las cerdas",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "BRUSHES_NUMBER",
+            "name": "Cantidad de cepillos",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "BRUSH_DIAMETER",
+            "name": "Diámetro del cepillo",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "BRUSH_TYPE",
+            "name": "Tipo de cepillo",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "COLOR",
+            "name": "Color",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "EXCLUSIVE_CHANNEL",
+            "name": "Canal exclusivo",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "GRIP_MATERIAL",
+            "name": "Material del mango",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "GTIN",
+            "name": "Código universal de producto",
+            "value_id": null,
+            "value_name": "0755332108589,0636227177234,0794437270043,0787461456118,787461456118,794437270043,755332108589,636227177234",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "0755332108589",
+                "struct": null
+              },
+              {
+                "id": null,
+                "name": "0636227177234",
+                "struct": null
+              },
+              {
+                "id": null,
+                "name": "0794437270043",
+                "struct": null
+              },
+              {
+                "id": null,
+                "name": "0787461456118",
+                "struct": null
+              },
+              {
+                "id": null,
+                "name": "787461456118",
+                "struct": null
+              },
+              {
+                "id": null,
+                "name": "794437270043",
+                "struct": null
+              },
+              {
+                "id": null,
+                "name": "755332108589",
+                "struct": null
+              },
+              {
+                "id": null,
+                "name": "636227177234",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "IS_IONIC",
+            "name": "Es iónico",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "IS_KIT",
+            "name": "Es kit",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "IS_THERMAL",
+            "name": "Es térmico",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "ITEM_CONDITION",
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_name": "Nuevo",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "MODEL",
+            "name": "Modelo",
+            "value_id": null,
+            "value_name": "B003SQB7WS",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "B003SQB7WS",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "MPN",
+            "name": "MPN",
+            "value_id": null,
+            "value_name": "B003SQB7WS",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "B003SQB7WS",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "PRODUCT_DATA_SOURCE",
+            "name": "Fuente del producto",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "SELLER_SKU",
+            "name": "SKU",
+            "value_id": null,
+            "value_name": "B003SQB7WS",
+            "value_struct": null,
+            "values": [
+              {
+                "id": null,
+                "name": "B003SQB7WS",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "id": "TOTAL_LENGTH",
+            "name": "Largo total",
+            "value_id": "-1",
+            "value_name": null,
+            "value_struct": null,
+            "values": [
+              {
+                "id": "-1",
+                "name": null,
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          }
+        ],
+        "warnings": [
+        ],
+        "listing_source": "",
+        "variations": [
+        ],
+        "status": "active",
+        "sub_status": [
+        ],
+        "tags": [
+          "good_quality_picture",
+          "immediate_payment",
+          "cart_eligible"
+        ],
+        "warranty": "Garantía del vendedor: 30 días",
+        "catalog_product_id": null,
+        "domain_id": "MCO-HAIR_BRUSHES",
+        "parent_item_id": null,
+        "differential_pricing": null,
+        "deal_ids": [
+        ],
+        "automatic_relist": false,
+        "date_created": "2021-09-16T01:06:43.000Z",
+        "last_updated": "2022-04-26T22:35:53.000Z",
+        "health": 0.75,
+        "catalog_listing": false,
+        "channels": [
+          "marketplace"
+        ]
+      }
+    }
+  ]

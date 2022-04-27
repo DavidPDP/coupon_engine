@@ -9,6 +9,8 @@ version = '1.0.0'
 sourceCompatibility = '11'
 
 configurations {
+	all*.exclude module : 'spring-boot-starter-logging'
+    all*.exclude module : 'logback-classic'
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
@@ -24,6 +26,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
+	testImplementation 'org.mock-server:mockserver-netty-no-dependencies:5.13.2'
 }
 
 tasks.named('test') {
