@@ -94,3 +94,18 @@ Se puede también consumir por medio de un Curl:
         "items_id": ["MCO808833794","MCO808833795","MCO808833796","MCO808833797"],
         "amount": 50
     }'
+
+## Open API 3.0 / Swagger
+Puede consultar la documentación del API en cualquiera de los dos formatos:
+
+Open API 3.0:
+    
+    http://localhost:5000/v3/api-docs
+    
+Swagger:
+
+    http://localhost:5000/webjars/swagger-ui/index.html
+
+# Gestión del Tiempo
+
+![Time Distribution](https://user-images.githubusercontent.com/9300406/165649197-f6eeaa3a-205a-4053-8f39-ced67081c8ab.png)
