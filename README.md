@@ -80,15 +80,19 @@ Se procedió automatizar el flujo del despliegue tomando dos caminos. El primero
 En la carpeta infra se encuentra el archivo main.tf con las instrucciones para recrear la infraestructura utilizada para el despliegue. Para recrearla basta con:
 
 * Ejecutar desde la CLI de AWS (puede instalar desde este [link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)) el siguiente comando. Esto le permitirá configurar las credenciales (puede crearlas desde la consola de IAM para setearlas localmente):
-    
-    aws configure  
+ 
+``` 
+aws configure
+```
     
 * Una vez configurada (se creará los archivos correspondientes desde el /home/.aws) podrá ejecutar el archivo con Terraform siguiendo los pasos: 
 
-    terraform init
-    terraform validate
-    terraform plan
-    terraform apply
+```
+terraform init
+terraform validate
+terraform plan
+terraform apply
+```
 
 Para el pipeline de despliegue (Github Actions) se tendrá que crear un pull request para poder activarlo. Esto permite llevar una guarda sobre la calidad de la rama principal.
 
@@ -124,3 +128,8 @@ Swagger:
 # Gestión del Tiempo
 
 ![Time Distribution](https://user-images.githubusercontent.com/9300406/165649197-f6eeaa3a-205a-4053-8f39-ced67081c8ab.png)
+
+# Gestión del Workflow de Configuración
+
+![Workflow](https://user-images.githubusercontent.com/9300406/165650834-05a43a51-050b-4a9e-a55c-19d3a527b279.png)
+
