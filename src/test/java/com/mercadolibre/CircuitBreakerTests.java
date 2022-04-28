@@ -1,10 +1,17 @@
 package com.mercadolibre;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockserver.model.HttpRequest.request;
+import static org.mockserver.model.HttpResponse.response;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.mockserver.integration.ClientAndServer;
+import org.mockserver.model.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,7 +26,7 @@ import com.mercadolibre.entities.RecommendedItems;
 import reactor.core.publisher.Mono;
 
 @SpringBootTest
-@AutoConfigureWebTestClient(timeout = "36000")
+@AutoConfigureWebTestClient
 public class CircuitBreakerTests {
 
 	@Autowired
@@ -28,24 +35,40 @@ public class CircuitBreakerTests {
 	@Autowired
 	private ObjectMapper mapper = new ObjectMapper();
 	
+	private static ClientAndServer mockServer;
+	
+	@BeforeAll
+	static void startServer() {
+		mockServer = ClientAndServer.startClientAndServer(9100);
+	}
+	
+	@AfterAll
+	static void stopServer() {
+		mockServer.stop();
+	}
+	
 	@DynamicPropertySource
     static void registerMeliAPIProperties(DynamicPropertyRegistry registry) {
-        registry.add("meli.items.api.url", () -> "https://api.mercadolibre.com/items");
-        registry.add("meli.items.api.paging", () -> "20");
+        registry.add("meli.items.api.url", () -> "http://localhost:9100");
+        registry.add("meli.items.api.paging", () -> "2");
         registry.add("resilience4j.timelimiter.configs.default.timeout-duration", () -> "1s");
     }
 	
 	@Test
-	void consume_coupon_engine_api() throws Exception {
+	void consume_coupon_engine_api_with_back_pressure() throws Exception {
+			
+		var itemIds = List.of("MCO808833794","MCO808833795");	
+
+		// Mock.
+		mockServer.when(request().withMethod("GET").withQueryStringParameter("ids", String.join(",", itemIds)))
+    		.respond(
+				response().withStatusCode(200)
+					.withBody("invalid", MediaType.APPLICATION_JSON).withDelay(TimeUnit.SECONDS, 10)
+			);
 		
 		// Init.
 		CouponRequest request = new CouponRequest();
-		request.setItemsId(List.of("MCO808833794","MCO808833795","MCO808833796","MCO808833797",
-				"MCO808833798", "MCO808833799","MCO808833800","MCO808833801","MCO808833802",
-				"MCO808833803", "MCO808833804","MCO808833805","MCO808833806","MCO808833807", 
-				"MCO808833808", "MCO808833809","MCO808833810","MCO808833811","MCO808833812", 
-				"MCO808833813","MCO808833814", "MCO808833815", "MCO808833816","MCO808833817",
-				"MCO808833818","MCO808833819", "MCO808833820"));
+		request.setItemsId(itemIds);
 		request.setCouponAmount(50000F);
 		
 		// Scenario 1: verify response struct.

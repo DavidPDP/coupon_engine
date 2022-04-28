@@ -16,6 +16,8 @@ import org.mockserver.integration.ClientAndServer;
 import org.mockserver.model.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.DynamicPropertyRegistry;
+import org.springframework.test.context.DynamicPropertySource;
 
 import com.mercadolibre.repositories.MeliItemRepo;
 
@@ -36,6 +38,13 @@ public class MeliItemRepoTests {
 	static void stopServer() {
 		mockServer.stop();
 	}
+	
+	@DynamicPropertySource
+    static void registerMeliAPIProperties(DynamicPropertyRegistry registry) {
+        registry.add("meli.items.api.url", () -> "http://localhost:9100");
+        registry.add("meli.items.api.paging", () -> "2");
+        registry.add("resilience4j.timelimiter.configs.default.timeout-duration", () -> "20s");
+    }
 	
 	@Test
 	void fetch_meli_items_and_transform_in_map() throws Exception {
