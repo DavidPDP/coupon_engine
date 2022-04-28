@@ -2,7 +2,9 @@ package com.mercadolibre.strategies;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 /**
  * Contract to implement new items recommendation strategies
@@ -16,11 +18,24 @@ public interface CouponBuyStrategy {
 	
 	/**
 	 * Given the prices of the items, implements a strategy to 
-	 * organize a purchase priority list.
+	 * prioritize a recommended purchase list.
 	 * 
 	 * @param items Map structure with the customer's favorite items. {k=itemId, v=itemPrice}.
 	 * @return Purchase priority list.
 	 */
-	List<Entry<String, Float>> applyCouponStrategy(Map<String, Float> items);
+	// Note: This method represents the contract defined by the client.
+	List<String> calculate(Map<String, Float> items, Float amount);
+	
+	@AllArgsConstructor
+	@Getter
+	public enum Types { 
+		
+		MAX_ITEM_QUANTITY("maxItemQuantityStrategy"), 
+		
+		MAX_SPEND("maxSpendStrategy");
+		
+		private String name;
+		
+	};
 	
 }

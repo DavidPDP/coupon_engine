@@ -1,16 +1,13 @@
 package com.mercadolibre.core;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 
 import org.springframework.stereotype.Service;
 
 import com.mercadolibre.entities.RecommendedItems;
 import com.mercadolibre.repositories.MeliItemRepo;
 import com.mercadolibre.strategies.CouponBuyStrategy;
-import com.mercadolibre.strategies.MaxItemQuantityStrategy;
 
 import lombok.AllArgsConstructor;
 import reactor.core.publisher.Mono;
@@ -26,8 +23,7 @@ import reactor.core.publisher.Mono;
 @AllArgsConstructor
 public class CouponProcessor {
 
-	// Note: defined by the client.
-	private static final CouponBuyStrategy DEFAULT_COUPON_STRATEGY = new MaxItemQuantityStrategy();
+	private Map<String, CouponBuyStrategy> couponStrategies;
 	
 	private MeliItemRepo meliItemRepo;
 	
@@ -59,45 +55,16 @@ public class CouponProcessor {
 	 */
 	private RecommendedItems buildRecommendedItems(Map<String, Float> items, Float couponAmount) {
 		
+		var defaultStrategy = couponStrategies.get(CouponBuyStrategy.Types.MAX_ITEM_QUANTITY.getName());
+		
 		if(items.size() == 1) { // only have empty item
 			return RecommendedItems.buildError();
 		} else {
-			var recommendedItems = calculate(items, couponAmount);
+			var recommendedItems = defaultStrategy.calculate(items, couponAmount);
 			var totalPriceRecommendedItems = recommendedItems.stream().map(i -> items.get(i)).reduce(0.00F, Float::sum);
 			return RecommendedItems.buildSucessful(recommendedItems, totalPriceRecommendedItems);
 		}
 	
-	}
-	
-	/**
-	 * It is responsible for calculating the recommended items list. 
-	 * For this, proceeds to order the items based on the default strategy.
-	 * Subsequently, it is responsible for calculating the items that 
-	 * reach the amount of the coupon to spend. Resulting in recommended items 
-	 * list (item ids).
-	 * 
-	 * @param items Map structure with the customer's favorite items. {k=itemId, v=itemPrice}.
-	 * @param amount as the limit to spend.
-	 * @return recommended items list (item ids).
-	 */
-	// Note: This method represents the contract defined by the client.
-	private List<String> calculate(Map<String, Float> items, Float amount) {
-	
-		List<String> result = new ArrayList<>(); 
-		var itemsAvailableToBuy = DEFAULT_COUPON_STRATEGY.applyCouponStrategy(items);
-		
-		float totalPriceItemsBuyed = 0;
-		for(Entry<String, Float> item : itemsAvailableToBuy) {
-			
-			if(totalPriceItemsBuyed + item.getValue() > amount) break;
-			
-			result.add(item.getKey());
-			totalPriceItemsBuyed += item.getValue();
-			
-		}
-		
-		return result;
-		
 	}
 	
 }
