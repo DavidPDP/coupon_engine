@@ -58,6 +58,10 @@ A continuación, se puede observar el resultados de las pruebas:
 
 ![Test Coverage](https://github.com/DavidPDP/coupon_engine/blob/main/docs/imgs/test-coverage.PNG)
 
+![Load Tests](https://user-images.githubusercontent.com/9300406/165667270-83d5e2fc-e6e9-4807-a639-18aa759d90a5.png)
+
+Se revisa en la consola y se encuentra que hay un cuello de botella en los tiempos de respuestas y carga que maneja el API de MELI. Esto promueve un análisis detallado sobre cada una de las partes involucradas (aunque inicialmente ya se reconoció el cuello de botella que hay con la integración). Esto se podría completar con APM para sacar los perfiles de la aplicación y proponer soluciones estructurales al problema. Por último, teóricamente resiste la carga de 100K rpm.
+
 # Despliegue
 ## Stand-Alone (local)
 Para ejecutar desde el equipo local basta con clonar el repositorio y acceder al directorio resultante (coupon_engine):
