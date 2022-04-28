@@ -32,7 +32,7 @@ public class CircuitBreakerTests {
     static void registerMeliAPIProperties(DynamicPropertyRegistry registry) {
         registry.add("meli.items.api.url", () -> "https://api.mercadolibre.com/items");
         registry.add("meli.items.api.paging", () -> "20");
-        registry.add("resilience4j.timelimiter.configs.default.timeout-duration", () -> "5s");
+        registry.add("resilience4j.timelimiter.configs.default.timeout-duration", () -> "1s");
     }
 	
 	@Test
@@ -40,7 +40,12 @@ public class CircuitBreakerTests {
 		
 		// Init.
 		CouponRequest request = new CouponRequest();
-		request.setItemsId(List.of("MCO808833794","MCO808833795"));
+		request.setItemsId(List.of("MCO808833794","MCO808833795","MCO808833796","MCO808833797",
+				"MCO808833798", "MCO808833799","MCO808833800","MCO808833801","MCO808833802",
+				"MCO808833803", "MCO808833804","MCO808833805","MCO808833806","MCO808833807", 
+				"MCO808833808", "MCO808833809","MCO808833810","MCO808833811","MCO808833812", 
+				"MCO808833813","MCO808833814", "MCO808833815", "MCO808833816","MCO808833817",
+				"MCO808833818","MCO808833819", "MCO808833820"));
 		request.setCouponAmount(50000F);
 		
 		// Scenario 1: verify response struct.
