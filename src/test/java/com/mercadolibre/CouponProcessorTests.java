@@ -42,17 +42,17 @@ class CouponProcessorTests {
 		
 		// Scenario 1: Positive residue.
 		var recommendedItems = couponProcessor.calculateItemsToRecommend(itemIds, 500F).block();
-		var expectedRecommendedItems = new RecommendedItems(List.of("MLA4", "MLA5", "MLA1", "MLA2"), 480F);
+		var expectedRecommendedItems = RecommendedItems.buildSucessful(List.of("MLA4", "MLA5", "MLA1", "MLA2"), 480F);
 		assertEquals(expectedRecommendedItems, recommendedItems);
 				
 		// Scenario 2: Zero residue.
 		recommendedItems = couponProcessor.calculateItemsToRecommend(itemIds, 500F).block();
-		expectedRecommendedItems = new RecommendedItems(List.of("MLA5", "MLA4", "MLA1", "MLA2", "MLA3"), 500F);
+		expectedRecommendedItems = RecommendedItems.buildSucessful(List.of("MLA5", "MLA4", "MLA1", "MLA2", "MLA3"), 500F);
 		assertEquals(expectedRecommendedItems, recommendedItems);
 			
 		// Scenario 3: No items to buy (price over amount limit).
 		recommendedItems = couponProcessor.calculateItemsToRecommend(itemIds, 500F).block();
-		expectedRecommendedItems = new RecommendedItems(Collections.emptyList(), 0.00F);
+		expectedRecommendedItems = RecommendedItems.buildSucessful(Collections.emptyList(), 0.00F);
 		assertEquals(expectedRecommendedItems, recommendedItems);
 		
 	}

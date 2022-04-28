@@ -58,9 +58,15 @@ public class CouponProcessor {
 	 * @return {@link com.mercadolibre.entities.RecommendedItems RecommendedItems}.
 	 */
 	private RecommendedItems buildRecommendedItems(Map<String, Float> items, Float couponAmount) {
-		var recommendedItems = calculate(items, couponAmount);
-		var totalPriceRecommendedItems = recommendedItems.stream().map(i -> items.get(i)).reduce(0.00F, Float::sum);
-		return new RecommendedItems(recommendedItems, totalPriceRecommendedItems);
+		
+		if(items.size() == 1) { // only have empty item
+			return RecommendedItems.buildError();
+		} else {
+			var recommendedItems = calculate(items, couponAmount);
+			var totalPriceRecommendedItems = recommendedItems.stream().map(i -> items.get(i)).reduce(0.00F, Float::sum);
+			return RecommendedItems.buildSucessful(recommendedItems, totalPriceRecommendedItems);
+		}
+	
 	}
 	
 	/**

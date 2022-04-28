@@ -50,9 +50,10 @@ public class CouponEngineAPI {
 	public Mono<RecommendedItems> recommendItemsByApplyingCoupon(@RequestBody CouponRequest request) {
 		var response = couponProcessor.calculateItemsToRecommend(request.getItemsId(), request.getCouponAmount());
 		response.subscribe(r -> { 
-			System.out.format("%s,%s,%s,%s,%s", 
+			int rSize = r.getItemsId() != null ? r.getItemsId().size() : 0;
+			System.out.format("%s,%s,%s,%s,%s'\n", 
 					request.getItemsId().size(), request.getCouponAmount(),
-					r.getItemsId().size(), r.getTotal(), Instant.now().toString()
+					rSize, r.getTotal(), Instant.now().toString()
 			); 
 			// Only for DDR.
 		});

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigBuilder;
+import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreaker;
+import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreakerFactory;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -23,28 +26,49 @@ import reactor.core.publisher.Mono;
 public class MeliItemRepo {
 	
 	private WebClient meliItemAdapter;
+	private ReactiveCircuitBreaker fecthMeliItemsCB;
 	
 	/** Pagination, represents the limit of items that can be queried in a single request. */
 	private int pagingLimit;
 	
-	public MeliItemRepo(WebClient.Builder webClientBuilder, Environment env) {
+	public MeliItemRepo(WebClient.Builder webClientBuilder, 
+			ReactiveCircuitBreakerFactory<Resilience4JConfigBuilder.Resilience4JCircuitBreakerConfiguration, Resilience4JConfigBuilder> cBFactory, 
+			Environment env) {
 		meliItemAdapter = webClientBuilder
 				.baseUrl(env.getRequiredProperty("meli.items.api.url"))
 				.build();
 		pagingLimit = env.getRequiredProperty("meli.items.api.paging", Integer.class);
+		fecthMeliItemsCB = cBFactory.create("coupon");
 	}
 	
 	// Note: Representation of the data to deserialize.
 	// Json response sintax: [ body: { id: string, price: numeric } ].
 	@Data
 	public static class MeliItemWrapper {
+		
 		private MeliItem body;
+		
+		public static MeliItemWrapper buildEmpty() {
+			var entity = new MeliItemWrapper();
+			entity.setBody(MeliItem.buildEmpty());
+			return entity;
+		}
+		
 	}
 	
 	@Data
 	public static class MeliItem {
+		
 		private String id;
 		private Float price;
+		
+		public static MeliItem buildEmpty() {
+			var entity = new MeliItem();
+			entity.setId("");
+			entity.setPrice(0F);
+			return entity;
+		}
+		
 	}
 	
 	/**
@@ -66,10 +90,16 @@ public class MeliItemRepo {
 			var itemIdsChunk = itemIds.subList(i, j); // create items chunk to request.
 			
 			// Consume MELI items API.
-			var fetchedItems = meliItemAdapter.get()
+			var fetchedItems = fecthMeliItemsCB.run( // circuit breaker.
+				meliItemAdapter.get()
 					.uri(uri -> uri.queryParam("ids", String.join(",", itemIdsChunk)).build())
 					.retrieve()
-					.bodyToFlux(MeliItemWrapper.class);
+					.bodyToFlux(MeliItemWrapper.class),
+				throwable -> {
+					System.out.println("Cogestion/Error: " + throwable.getMessage());
+					return Flux.just(MeliItemWrapper.buildEmpty());
+				}
+			);
 			
 			// Merge responses.
 			resultPubs.add(fetchedItems);

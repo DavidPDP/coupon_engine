@@ -15,11 +15,26 @@ import lombok.Value;
  */
 @Value
 public class RecommendedItems {
+	
+	private static final int SUCCESSFUL_CODE = 0;
+	private static final int ERROR_CODE = 1;
+	
+	private int code;
+	
+	private String message;
 
 	@JsonAlias("items_id") 
 	private List<String> itemsId;
 	
 	/** Total price of recommended items. */
 	private Float total;
+	
+	public static RecommendedItems buildSucessful(List<String> itemsId, Float total) {
+		return new RecommendedItems(SUCCESSFUL_CODE, "Successful", itemsId, total);
+	}
+	
+	public static RecommendedItems buildError() {
+		return new RecommendedItems(ERROR_CODE, "Congestion", null, 0.00F);
+	}
 	
 }
