@@ -59,7 +59,7 @@ A continuación, se puede observar el resultados de las pruebas:
 ![Test Coverage](https://github.com/DavidPDP/coupon_engine/blob/main/docs/imgs/test-coverage.PNG)
 
 # Despliegue
-## Stand-Alone
+## Stand-Alone (local)
 Para ejecutar desde el equipo local basta con clonar el repositorio y acceder al directorio resultante (coupon_engine):
 
     git clone https://github.com/DavidPDP/coupon_engine.git
@@ -76,6 +76,21 @@ Por último ejecutar la tarea que levanta el proceso de Spring:
 Se procedió automatizar el flujo del despliegue tomando dos caminos. El primero enfocado en la infraestructura (GitOps), el cual se trabajó con la herramienta Terraform, lo que permite la consistencia a la hora de recrear la infraestructura y la independencia del proveedor de nube para desplegar. En el segundo camino se procedió a definir un pipeline de despliegue por medio de GitHub Actions, lo que permite automatizar el despliegue de la infraestructura.
 
 ![Github Workflow](https://drive.google.com/uc?export=download&id=1gT4ZFuLC8mK1LGAaagoN1YzcqB6hkx04)
+
+En la carpeta infra se encuentra el archivo main.tf con las instrucciones para recrear la infraestructura utilizada para el despliegue. Para recrearla basta con:
+
+* Ejecutar desde la CLI de AWS (puede instalar desde este [link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)) el siguiente comando. Esto le permitirá configurar las credenciales (puede crearlas desde la consola de IAM para setearlas localmente):
+    
+    aws configure  
+    
+* Una vez configurada (se creará los archivos correspondientes desde el /home/.aws) podrá ejecutar el archivo con Terraform siguiendo los pasos: 
+
+    terraform init
+    terraform validate
+    terraform plan
+    terraform apply
+
+Para el pipeline de despliegue (Github Actions) se tendrá que crear un pull request para poder activarlo. Esto permite llevar una guarda sobre la calidad de la rama principal.
 
 ## Cloud
 Para consumir desde la web se puede acceder por medio de la colección de Postman que se encuentra en la carpeta docs de este repositorio. El link de consumo es el siguiente: 
