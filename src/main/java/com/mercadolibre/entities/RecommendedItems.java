@@ -17,7 +17,8 @@ import lombok.Value;
 public class RecommendedItems {
 	
 	private static final int SUCCESSFUL_CODE = 0;
-	private static final int ERROR_CODE = 1;
+	private static final int CONGESTION_ERROR_CODE = 1;
+	private static final int BAD_PARAMS_ERROR_CODE = 2;
 	
 	private int code;
 	
@@ -33,8 +34,15 @@ public class RecommendedItems {
 		return new RecommendedItems(SUCCESSFUL_CODE, "Successful", itemsId, total);
 	}
 	
-	public static RecommendedItems buildError() {
-		return new RecommendedItems(ERROR_CODE, "Congestion", null, 0.00F);
+	public static RecommendedItems buildCongestionError() {
+		return new RecommendedItems(CONGESTION_ERROR_CODE, "Congestion", null, 0.00F);
+	}
+	
+	public static RecommendedItems buildBadParams() {
+		return new RecommendedItems(BAD_PARAMS_ERROR_CODE, 
+			"Bad params: the item ids list cannot be null and the coupon amount cannot be 0 or negative", 
+			null, 0.00F
+		);
 	}
 	
 }

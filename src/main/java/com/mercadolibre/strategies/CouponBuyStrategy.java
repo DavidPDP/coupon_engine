@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 
 /**
  * Contract to implement new items recommendation strategies
@@ -27,14 +26,14 @@ public interface CouponBuyStrategy {
 	List<String> calculate(Map<String, Float> items, Float amount);
 	
 	@AllArgsConstructor
-	@Getter
-	public enum Types { 
+	public enum CouponBuyStrategyType { 
 		
 		MAX_ITEM_QUANTITY("maxItemQuantityStrategy"), 
-		
 		MAX_SPEND("maxSpendStrategy");
 		
-		private String name;
+		private String id;
+		
+		public String id() { return id; }
 		
 	};
 	

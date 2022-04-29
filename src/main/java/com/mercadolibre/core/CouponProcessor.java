@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.mercadolibre.entities.RecommendedItems;
 import com.mercadolibre.repositories.MeliItemRepo;
 import com.mercadolibre.strategies.CouponBuyStrategy;
+import com.mercadolibre.strategies.CouponBuyStrategy.CouponBuyStrategyType;
 
 import lombok.AllArgsConstructor;
 import reactor.core.publisher.Mono;
@@ -36,9 +37,17 @@ public class CouponProcessor {
 	 * @param couponAmount
 	 * @return Future/Promise with RecommendedItems
 	 */
-	public Mono<RecommendedItems> calculateItemsToRecommend(List<String> itemIds, Float couponAmount) {
-		var items = meliItemRepo.fecthMeliItems(itemIds);
-		return items.map(fecthedItems -> buildRecommendedItems(fecthedItems, couponAmount));
+	public Mono<RecommendedItems> calculateItemsToRecommend(List<String> itemIds, Float couponAmount, CouponBuyStrategyType strategyType) {
+		
+		if(itemIds == null || couponAmount < 1) 
+			return Mono.just(RecommendedItems.buildBadParams());  
+		else {
+			var couponBuyStrategy = strategyType == null ? 
+				couponStrategies.get(CouponBuyStrategyType.MAX_SPEND.id()) : couponStrategies.get(strategyType.id());
+			var items = meliItemRepo.fecthMeliItems(itemIds);
+			return items.map(fecthedItems -> buildRecommendedItems(fecthedItems, couponAmount, couponBuyStrategy));
+		}
+		
 	}
 	
 	/**
@@ -53,14 +62,12 @@ public class CouponProcessor {
 	 * @param couponAmount as the limit to spend.
 	 * @return {@link com.mercadolibre.entities.RecommendedItems RecommendedItems}.
 	 */
-	private RecommendedItems buildRecommendedItems(Map<String, Float> items, Float couponAmount) {
+	private RecommendedItems buildRecommendedItems(Map<String, Float> items, Float couponAmount, CouponBuyStrategy strategy) {
 		
-		var defaultStrategy = couponStrategies.get(CouponBuyStrategy.Types.MAX_ITEM_QUANTITY.getName());
-		
-		if(items.size() == 1) { // only have empty item
-			return RecommendedItems.buildError();
+		if(items.size() == 1 && items.containsKey("")) { // only have empty item
+			return RecommendedItems.buildCongestionError();
 		} else {
-			var recommendedItems = defaultStrategy.calculate(items, couponAmount);
+			var recommendedItems = strategy.calculate(items, couponAmount);
 			var totalPriceRecommendedItems = recommendedItems.stream().map(i -> items.get(i)).reduce(0.00F, Float::sum);
 			return RecommendedItems.buildSucessful(recommendedItems, totalPriceRecommendedItems);
 		}

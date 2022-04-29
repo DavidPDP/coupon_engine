@@ -81,7 +81,7 @@ public class CircuitBreakerTests {
 				.getResponseBody()
 				.blockFirst();
 		
-		var expectedResponseBody = RecommendedItems.buildError();
+		var expectedResponseBody = RecommendedItems.buildCongestionError();
 		assertEquals(mapper.writeValueAsString(expectedResponseBody), responseBody);
 
 	}

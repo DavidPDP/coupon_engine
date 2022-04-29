@@ -73,6 +73,7 @@ public class MeliItemRepoTests {
 		var fetchedItems = meliItemRepo.fecthMeliItems(itemIds1);
 		var expectedItems = Map.of("MCO613846300", 9238F, "MCO808833794", 348900F);
 		assertTrue(expectedItems.equals(fetchedItems.block()));
+		System.out.println(fetchedItems);
 		
 		// Scenario 2: Fetch more than paging limit (current 2).
 		var itemIds = List.of("MCO613846300", "MCO808833794", "MCO808833795", "MCO808833796", "MCO808833797", "MCO808833798");

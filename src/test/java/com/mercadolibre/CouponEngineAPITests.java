@@ -32,13 +32,14 @@ public class CouponEngineAPITests {
     static void registerMeliAPIProperties(DynamicPropertyRegistry registry) {
         registry.add("meli.items.api.url", () -> "https://api.mercadolibre.com/items");
         registry.add("meli.items.api.paging", () -> "20");
+        registry.add("resilience4j.timelimiter.configs.default.timeout-duration", () -> "20s");
     }
 	
 	@Test
 	void consume_coupon_engine_api() throws Exception {
 		
 		// Init.
-		CouponRequest request = new CouponRequest();
+		var request = new CouponRequest();
 		request.setItemsId(List.of("MCO808833794","MCO808833795","MCO808833796","MCO808833797",
 				"MCO808833798", "MCO808833799","MCO808833800","MCO808833801","MCO808833802",
 				"MCO808833803", "MCO808833804","MCO808833805","MCO808833806","MCO808833807", 
@@ -57,8 +58,30 @@ public class CouponEngineAPITests {
 				.getResponseBody()
 				.blockFirst();
 		
-		var expectedResponseBody = RecommendedItems.buildSucessful(List.of("MCO808833814"), 17400F);
+		var expectedResponseBody = RecommendedItems.buildSucessful(List.of("MCO808833807"), 45400F);
 		assertEquals(mapper.writeValueAsString(expectedResponseBody), responseBody);
+		
+	}
+	
+	@Test
+	void consume_coupon_engine_api_with_bad_params() throws Exception {
+		
+		// Init.
+		var request = new CouponRequest();
+		request.setItemsId(null);
+		
+		// Scenario 1: verify response struct.
+		var responseBody = webClient.post()
+				.uri("/coupon")
+				.body(Mono.just(request), CouponRequest.class)
+				.exchange()
+				.expectStatus().isOk()
+				.returnResult(String.class)
+				.getResponseBody()
+				.blockFirst();
+		
+		assertEquals(mapper.writeValueAsString(RecommendedItems.buildBadParams()), responseBody);
+		
 		
 	}
 	

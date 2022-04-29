@@ -11,6 +11,8 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import com.mercadolibre.entities.MeliItem;
+
 import lombok.Data;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -38,7 +40,7 @@ public class MeliItemRepo {
 				.baseUrl(env.getRequiredProperty("meli.items.api.url"))
 				.build();
 		pagingLimit = env.getRequiredProperty("meli.items.api.paging", Integer.class);
-		fecthMeliItemsCB = cBFactory.create("coupon");
+		fecthMeliItemsCB = cBFactory.create("meliapi");
 	}
 	
 	// Note: Representation of the data to deserialize.
@@ -56,20 +58,6 @@ public class MeliItemRepo {
 		
 	}
 	
-	@Data
-	public static class MeliItem {
-		
-		private String id;
-		private Float price;
-		
-		public static MeliItem buildEmpty() {
-			var entity = new MeliItem();
-			entity.setId("");
-			entity.setPrice(0F);
-			return entity;
-		}
-		
-	}
 	
 	/**
 	 * Given the list of item ids, it proceeds to make requests asynchronously 
